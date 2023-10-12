@@ -32,7 +32,7 @@ app.post("/", function(req, res){
 });
 
 function get_coordinates(city, callback){
-    const apiKey = "1784da0607ce16b5a71de7e823741e01";
+    const apiKey = "your_api_key";
     const url = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + apiKey;
     https.get(url, function(response){
         response.on("data", function(data){
